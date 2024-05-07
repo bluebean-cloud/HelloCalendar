@@ -1,7 +1,37 @@
 <!--pages/liberalArts/index.wxml-->
 <view class="topbar">
-
+  <view data-id="0" class="filter-title-box" bind:tap="clickFilter">校区</view>
+  <view data-id="1" class="filter-title-box" bind:tap="clickFilter">类型</view>
+  <view data-id="2" class="filter-title-box" bind:tap="clickFilter">状态</view>
+</view>
+<view class="filter-container">
+  <view class="filter-content" wx:if="{{ showFilter[0] }}" style="position:fixed; width: 23vw; left: 5vw;">
+    <view bind:tap="changeFilter" data-campus="全部校区" class="filter-item">全部校区</view>
+    <view bind:tap="changeFilter" data-campus="学院路校区" class="filter-item">学院路校区</view>
+    <view bind:tap="changeFilter" data-campus="沙河校区" class="filter-item">沙河校区</view>
+  </view>
+  <view class="filter-content" wx:if="{{ showFilter[1] }}" style="position:fixed; width: 24vw; left: 38vw;">
+    <view bind:tap="changeFilter" data-type="全部类型" class="filter-item">全部类型</view>
+    <view bind:tap="changeFilter" data-type="德育" class="filter-item">德育</view>
+    <view bind:tap="changeFilter" data-type="美育" class="filter-item">美育</view>
+    <view bind:tap="changeFilter" data-type="劳动教育" class="filter-item">劳动教育</view>
+    <view bind:tap="changeFilter" data-type="安全健康" class="filter-item">安全健康</view>
+  </view>
+  <view class="filter-content" wx:if="{{ showFilter[2] }}" style="position:fixed; width: 23vw; left: 72vw;">
+    <view bind:tap="changeFilter" data-state="全部状态" class="filter-item">全部状态</view>
+    <view bind:tap="changeFilter" data-state="预告" class="filter-item">预告</view>
+    <view bind:tap="changeFilter" data-state="可选" class="filter-item">可选</view>
+    <view bind:tap="changeFilter" data-state="选课结束" class="filter-item">选课结束</view>
+    <view bind:tap="changeFilter" data-state="已开课" class="filter-item">已开课</view>
+  </view>
 </view>
 <view class="base-container">
-
+  <view class="card-container" wx:for="{{filter_courses}}" wx:key="index">
+    <view class="status-button">{{ item.state }}</view>
+    <view class="box-title" style="margin-top: 5px;">{{ item.name }}</view>
+    <view wx:if="{{item.state==='可选'}}" class="big-button" style="float: right; position: relative; top: 12px;">报名</view>
+    <view class="content-font" style="margin-top: 5px;">课程类型：{{ item.type }}</view>
+    <view class="content-font">地点：{{ item.location }}</view>
+    <view class="content-font">时间：{{ item.time }}</view>
+  </view>
 </view>

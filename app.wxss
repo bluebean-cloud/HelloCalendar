@@ -8,6 +8,14 @@ page {
   --son-item-background-color: #F1F1F1;
 }
 
+.big-button {
+  padding: 8px 15px 8px 15px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: var(--button-background-color);
+  border-radius: 10px;
+}
+
 .container {
   height: 100%;
   display: flex;
