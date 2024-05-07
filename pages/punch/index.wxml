@@ -1,0 +1,33 @@
+<!--pages/punch/index.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+  <view class="punch-base-container">
+    <view class="punch-title">
+      本学期截止于{{date}}
+    </view>
+    <view class="punch-card-container">
+      <view class="common-button">
+        TD 打卡
+      </view>
+      <view class="punch-time-box">
+        <view class="punch-time-item">06:30 - 10:00</view>
+        <view class="punch-short-line"></view>
+        <view class="punch-time-item">11:30 - 14:00</view>
+        <view class="punch-short-line"></view>
+        <view class="punch-time-item">15:30 - 20:00</view>
+      </view>
+      <view class="punch-data-box">
+        <span class="punch-data-left-text">已打卡</span>
+        <span class="punch-data-right-text"><span style="font-size: 30px;">{{ TD_data.cur }}</span>/{{ TD_data.total }}</span>
+      </view>
+    </view>
+    <view class="punch-card-container">
+      <view class="common-button">
+        阳光体育
+      </view>
+      <view class="punch-data-box">
+        <span class="punch-data-left-text">已打卡</span>
+        <span class="punch-data-right-text"><span style="font-size: 30px;">{{ sunshine.cur }}</span>/{{ sunshine.total }}</span>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,41 @@
+<!--pages/activity/index.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+  <view class="activity-base-container">
+    <navigator url='../liberalArts/index' class="activity-box-container">
+      <view class="activity-box-title">博雅</view>
+      <view class="activity-in-box">
+        <view class="activity-in-item">
+          <view class="activity-in-left">xxxxxxxx即将开始</view>
+        </view>
+      </view>
+      <view class="activity-in-box">
+        <view class="activity-in-item">
+          <view class="activity-in-left">德育</view>
+          <view class="activity-in-right">1/2</view>
+        </view>
+        <view class="activity-in-item">
+          <view class="activity-in-left">美育</view>
+          <view class="activity-in-right">0/1</view>
+        </view>
+        <view class="activity-in-item">
+          <view class="activity-in-left">劳动教育</view>
+          <view class="activity-in-right">0/2</view>
+        </view>
+        <view class="activity-in-item">
+          <view class="activity-in-left">安全健康</view>
+          <view class="activity-in-right">1/1</view>
+        </view>
+      </view>
+    </navigator>
+    
+    <view class="activity-box-container">
+      <view class="activity-box-title">校园活动</view>
+    </view>
+    <view class="activity-box-container">
+      <view class="activity-box-title">研讨室预约</view>
+    </view>
+    <view class="activity-box-container">
+      <view class="activity-box-title">体育场馆预约</view>
+    </view>
+  </view>
+</view>

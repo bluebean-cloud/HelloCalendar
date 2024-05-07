@@ -1,0 +1,73 @@
+@import "../common.wxss";
+
+.punch-base-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--box-background-color);
+  /* margin-top: 50px; */
+  height: 500px;
+  width: 100%;
+}
+
+.punch-title {
+  background-color: var(--box-tile-color);
+  height: 50px;
+  width: 100%;
+  font-style: Medium;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 12px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.punch-card-container {
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.punch-time-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.punch-time-item {
+  font-size: 14px;
+  padding: 0 5px 0 5px;
+  line-height: 100%;
+}
+.punch-short-line {
+  flex: 1;
+  height: 100%;
+  width: 1px;
+  background-color: black;
+}
+
+.punch-data-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+
+  background-color: var(--item-background-color);
+  height: 50px;
+  width: 70vw;
+  border-radius: 25px;
+  padding: 5px 10px 5px 10px;
+}
+
+.punch-data-left-text {
+  text-align: left;
+  line-height: 50px;
+
+  font-size: 16px;
+}
+
+.punch-data-right-text {
+  text-align: right;
+  line-height: 50px;
+
+  font-size: 16px;
+}
