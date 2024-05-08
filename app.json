@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/calendar/index",
     "pages/activity/index",
     "pages/logs/logs",
     "pages/index/index",
@@ -15,6 +16,10 @@
       {
         "pagePath": "pages/activity/index",
         "text": "校园活动"
+      },
+      {
+        "pagePath": "pages/calendar/index",
+        "text": "日历"
       }
     ]
   },

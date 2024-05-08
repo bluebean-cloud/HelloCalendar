@@ -82,10 +82,9 @@ Page({
       'filter_type': filter_type,
       'filter_state': filter_state
     })
-    let allData = this.data.courses
-    let newData = {}
-    for (let key in allData) {
-      let item = allData[key]
+    let filter_courses = {}
+    for (let key in this.data.courses) {
+      let item = this.data.courses[key]
       if (filter_campus !== '全部校区' && item.campus !== filter_campus) {
         continue
       } else if (filter_type !== '全部类型' && item.type !== filter_type) {
@@ -93,10 +92,10 @@ Page({
       } else if (filter_state !== '全部状态' && item.type !== filter_state) {
         continue
       }
-      newData[key] = item
+      filter_courses[key] = item
     }
     this.setData({
-      filter_courses: newData
+      filter_courses: filter_courses
     })
   },
 

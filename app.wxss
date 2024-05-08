@@ -6,6 +6,9 @@ page {
   --item-background-color: #D9D9D9;
   --card-background-color: #D9D9D9;
   --son-item-background-color: #F1F1F1;
+  --calendar-background-color: #D9D9D9;
+  --divding-line: #E6E6E6;
+  --calendar-course-background-color: #FFFFFF;
 }
 
 .big-button {

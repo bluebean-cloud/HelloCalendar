@@ -1,0 +1,106 @@
+/* pages/calendar/index.wxss */
+
+.topbar {
+  position: absolute;
+  height: 10vh;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.topbar-selector {
+  height: 10vh;
+  width: 20vw;
+  line-height: 10vh;
+  text-align: center;
+}
+
+.topbar-title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 10vh;
+  text-align: center;
+}
+
+
+.block {
+  position: absolute;
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--calendar-background-color);
+  z-index: 1;
+}
+
+
+.column-line {
+  height: 180vh;
+  width: 0.4vw;
+  background-color: var(--divding-line);
+  top: 11vh;
+  position: absolute;
+  z-index: 2;
+}
+
+.row-line {
+  width: 100%;
+  height: 0.4vh;
+  background-color: var(--divding-line);
+  position: absolute;
+  z-index: 2;
+}
+
+.courses-index-block {
+  position: absolute;
+  padding-top: 1vh;
+  left: 0;
+  height: 10vh;
+  width: 11vw;
+  z-index: 3;
+  text-align: center;
+  line-height: 10vh;
+}
+
+.courses-index-font {
+  height: 4vh;
+  font-size: 3.5vh;
+  font-weight: 600;
+  line-height: 4vh;
+  text-align: center;
+}
+
+.courses-time-font {
+  height: 2.5vh;
+  font-size: 2vh;
+  line-height: 2.5vh;
+  text-align: center;
+}
+
+.week-title-box {
+  position: absolute;
+  top: 11vh;
+  height: 10vh;
+  width: 11vw;
+  z-index: 3;
+  text-align: center;
+  line-height: 4vh;
+  padding-top: 1vh;
+}
+
+.course-item-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 4;
+  width: 12vw;
+  border-radius: 13px;
+  background-color: var(--calendar-course-background-color);
+}
+.course-info-font {
+
+  font-size: 10px;
+  text-align: center;
+}
