@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/ddl/index",
     "pages/calendar/index",
     "pages/activity/index",
     "pages/logs/logs",
@@ -20,6 +21,10 @@
       {
         "pagePath": "pages/calendar/index",
         "text": "日历"
+      },
+      {
+        "pagePath": "pages/ddl/index",
+        "text": "DDL"
       }
     ]
   },

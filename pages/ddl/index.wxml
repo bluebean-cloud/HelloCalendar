@@ -1,0 +1,62 @@
+<!--pages/ddl/index.wxml-->
+<!-- 待完成的ddl -->
+<scroll-view class="ddl-base-container" style="height: 56vh;" scroll-y>
+  <view wx:for="{{ to_be_finished_ddl }}" wx:key="index">
+    <view class="ddl-date-box">
+    <view style="line-height: 7vh; margin-left: 3vw; font-weight: 600;">{{item[0].date}}</view>
+      <view wx:for="{{ item }}" wx:key="ddl_index" wx:for-item="ddl">
+        <view class="ddl-content-box">
+          <view class="ddl-item ddl-box"></view>
+          <view class="ddl-item ddl-title">{{ddl.title}}</view>
+          <view class="ddl-item">{{ ddl.time }}</view>
+          <view class="ddl-item ddl-count">{{ ddl.count }}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<view style="height: 0.5vh; background-color: black; width: 100%;"></view>
+<!-- 已完成的ddl -->
+<scroll-view class="ddl-base-container" style="height: 37vh;" scroll-y>
+  <view class="finished-title">已完成</view>
+  <view wx:for="{{ finished_ddl }}" wx:key="index">
+    <view class="ddl-date-box">
+    <view style="line-height: 7vh; margin-left: 3vw; font-weight: 600;">{{item[0].date}}</view>
+      <view wx:for="{{ item }}" wx:key="ddl_index" wx:for-item="ddl">
+        <view class="ddl-content-box">
+          <view class="ddl-item ddl-box" style="background-color: var(--completed-ddl-box-color);"></view>
+          <view class="ddl-item ddl-title" style=" text-decoration: line-through; color: var(--font-gray-color);">{{ddl.title}}</view>
+          <view class="ddl-item ddl-time">{{ ddl.time }}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<button bind:tap="clickDDLButton" type="primary" size="mini" class="create-ddl-button">添加DDL</button>
+<view class="form-container" style="bottom: {{ show_form === true ? '-5%;' : '-100%;'}}">
+  <view class="form-title">
+    <view bind:tap="cancelCreate">取消</view>
+    <view>添加DDL</view>
+    <view bind:tap="createDDL">添加</view>
+  </view>
+  <view class="form-box" style="height: 13vh;">
+    <view >
+      <view class="input-title">标题</view>
+      <input style="height: 13vh; padding-left: 5vw;" value="{{input_title}}" bindinput="bindTitleInput"></input>
+   </view>
+  </view>
+  <view class="form-box" style="height: 26vh;">
+    <view>
+      <view class="input-title">截止日期</view>
+      <picker class="input-item" mode="date" bindchange="bindDateChange" value="{{ date }}">{{ date }}</picker>
+    </view>
+    <view>
+      <view class="input-title">截止时间</view>
+      <picker class="input-item" mode="time" bindchange="bindTimeChange" value="{{ time }}">{{ time }}</picker>
+    </view>
+  </view>
+  <view class="form-box" style="height: 100vh;">
+    <view class="input-title" style="float: none;">内容</view>
+    <textarea placeholder="详细信息" style="width: 80vw; position: relative; top: -3vh;" bindinput="bindContentInput">{{ content }}</textarea>
+  </view>
+</view>

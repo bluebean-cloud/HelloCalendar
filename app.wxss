@@ -9,6 +9,8 @@ page {
   --calendar-background-color: #D9D9D9;
   --divding-line: #E6E6E6;
   --calendar-course-background-color: #FFFFFF;
+  --completed-ddl-box-color: #939393;
+  --font-gray-color: #838383;
 }
 
 .big-button {
