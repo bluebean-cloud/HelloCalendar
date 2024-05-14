@@ -38,7 +38,7 @@
 }
 
 .base-container {
-  background-color: var(--card-background-color);
+  background-color: #F5F5F5;
   width: 100%;
   position: absolute;
   top: 7vh;
@@ -52,7 +52,7 @@
   width: 80vw;
   margin: 5px 0 5px 0;
   min-height: 100px;
-  background-color: #A6A6A6;
+  background-color: #FFFFFF;
   border-radius: 8px;
   padding: 10px;
 }

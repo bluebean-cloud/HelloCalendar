@@ -1,6 +1,7 @@
 .common-button {
   border-radius: 25px;
   background-color: var(--button-background-color);
+  color: #FFFFFF;
   padding: 5px 25px 5px 25px;
   font-family: Inter;
   font-size: 3vh;

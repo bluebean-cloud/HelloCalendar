@@ -1,10 +1,11 @@
 {
   "pages": [
-    "pages/ddl/index",
     "pages/calendar/index",
+    "pages/ddl/index",
     "pages/activity/index",
     "pages/punch/index",
-    "pages/liberalArts/index"
+    "pages/liberalArts/index",
+    "pages/user/index"
   ],
   "tabBar": {
     "list": [
@@ -14,21 +15,25 @@
       },
       {
         "pagePath": "pages/activity/index",
-        "text": "校园活动"
+        "text": "预约"
       },
       {
         "pagePath": "pages/calendar/index",
-        "text": "日历"
+        "text": "日程表"
       },
       {
         "pagePath": "pages/ddl/index",
         "text": "DDL"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人"
       }
     ]
   },
   "window": {
     "navigationBarTextStyle": "white",
-    "navigationBarBackgroundColor": "#6F6F6F"
+    "navigationBarBackgroundColor": "#122360"
   },
   "style": "v2",
   "componentFramework": "glass-easel",

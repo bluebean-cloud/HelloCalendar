@@ -6,6 +6,7 @@
     <view style="line-height: 7vh; margin-left: 3vw; font-weight: 600;">{{item[0].date}}</view>
       <view wx:for="{{ item }}" wx:key="ddl_index" wx:for-item="ddl">
         <view class="ddl-content-box">
+          <view class="ddl-background" style="{{ ddl.diff < 1000 * 60 * 60 * 24 ? 'width: ' + (100 - 100 * ddl.diff / (1000 * 60 * 60 * 24)) + 'vw;' : '' }}"></view>
           <view class="ddl-item ddl-box"></view>
           <view class="ddl-item ddl-title">{{ddl.title}}</view>
           <view class="ddl-item">{{ ddl.time }}</view>

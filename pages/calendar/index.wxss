@@ -98,6 +98,7 @@
   width: 12vw;
   border-radius: 13px;
   background-color: var(--calendar-course-background-color);
+  background-color: #AABCFF;
 }
 .course-info-font {
   font-size: 2vh;

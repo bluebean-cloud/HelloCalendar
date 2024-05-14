@@ -173,6 +173,7 @@ Page({
           const daysDiff = Math.floor(diff / (1000 * 60 * 60 * 24));
           ddl['count'] = `${daysDiff} 天`;
         }
+        ddl['diff'] = diff
       }
     }
     this.setData({

@@ -16,18 +16,23 @@
         <view class="punch-time-item">15:30 - 20:00</view>
       </view>
       <view class="punch-data-box">
-        <span class="punch-data-left-text">已打卡</span>
+        <span class="punch-data-left-text"><span class="common-button" style="padding: 0.5vh 2vw 0.5vh 2vw; border-radius: 10px;">TD线</span>已打卡</span>
         <span class="punch-data-right-text"><span style="font-size: 5vh;">{{ TD_data.cur }}</span>/{{ TD_data.total }}</span>
       </view>
     </view>
     <view class="punch-card-container">
       <view class="common-button">
-        阳光体育
+        阳光打卡
       </view>
       <view class="punch-data-box">
-        <span class="punch-data-left-text">已打卡</span>
+        <span class="punch-data-left-text"><span class="common-button" style="padding: 0.5vh 2vw 0.5vh 2vw; border-radius: 10px;">体育</span>已打卡</span>
         <span class="punch-data-right-text"><span style="font-size: 5vh;">{{ sunshine.cur }}</span>/{{ sunshine.total }}</span>
       </view>
+      <view class="punch-data-box">
+        <span class="punch-data-left-text"><span class="common-button" style="padding: 0.5vh 2vw 0.5vh 2vw; border-radius: 10px;">美育</span>已打卡</span>
+        <span class="punch-data-right-text"><span style="font-size: 5vh;">1</span>/1</span>
+      </view>
     </view>
+    <view class="common-button" style="margin-top: 10vh;">转到阳光打卡</view>
   </view>
 </view>

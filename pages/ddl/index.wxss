@@ -84,6 +84,7 @@
   border-radius: 10px 10px 0 0;
   margin-bottom: 3vh;
   margin-top: 1vh;
+  position: relative;
 }
 
 .ddl-content-box {
@@ -93,11 +94,22 @@
   background-color: var(--item-background-color);
 }
 
+.ddl-background {
+  position: absolute;
+  height: 10vh;
+  width: 0;
+  border-radius: 6px;
+  background-color: #FCC6C6;
+  z-index: 1;
+}
+
 .ddl-item {
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  z-index: 2;
+  position: relative;
 }
 
 .ddl-box {
