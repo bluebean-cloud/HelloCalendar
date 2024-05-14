@@ -16,7 +16,7 @@ Page({
     let content = this.data.content
     let stored_ddl = wx.getStorageSync('storedDDL')
     let cur_date_ddl = stored_ddl[date]
-    if (content === "" || /^\s*$/.test(content)) {
+    if (title === "" || /^\s*$/.test(title)) {
       wx.showToast({
         title: '标题不可为空',
         icon: 'error',

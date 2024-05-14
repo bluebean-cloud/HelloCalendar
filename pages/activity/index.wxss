@@ -19,7 +19,7 @@
 .activity-box-title {
   text-align: center;
   width: 100%;
-  font-size: 20px;
+  font-size: 4vh;
   font-weight: 600;
 }
 

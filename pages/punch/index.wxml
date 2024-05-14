@@ -17,7 +17,7 @@
       </view>
       <view class="punch-data-box">
         <span class="punch-data-left-text">已打卡</span>
-        <span class="punch-data-right-text"><span style="font-size: 30px;">{{ TD_data.cur }}</span>/{{ TD_data.total }}</span>
+        <span class="punch-data-right-text"><span style="font-size: 5vh;">{{ TD_data.cur }}</span>/{{ TD_data.total }}</span>
       </view>
     </view>
     <view class="punch-card-container">
@@ -26,7 +26,7 @@
       </view>
       <view class="punch-data-box">
         <span class="punch-data-left-text">已打卡</span>
-        <span class="punch-data-right-text"><span style="font-size: 30px;">{{ sunshine.cur }}</span>/{{ sunshine.total }}</span>
+        <span class="punch-data-right-text"><span style="font-size: 5vh;">{{ sunshine.cur }}</span>/{{ sunshine.total }}</span>
       </view>
     </view>
   </view>

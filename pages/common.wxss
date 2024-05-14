@@ -3,7 +3,7 @@
   background-color: var(--button-background-color);
   padding: 5px 25px 5px 25px;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 3vh;
   font-weight: 700;
   height: 40px;
   text-align: center;

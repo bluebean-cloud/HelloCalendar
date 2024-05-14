@@ -18,7 +18,7 @@
 }
 
 .topbar-title {
-  font-size: 12px;
+  font-size: 2.5vh;
   font-weight: 600;
   line-height: 10vh;
   text-align: center;
@@ -100,7 +100,6 @@
   background-color: var(--calendar-course-background-color);
 }
 .course-info-font {
-
-  font-size: 10px;
+  font-size: 2vh;
   text-align: center;
 }
